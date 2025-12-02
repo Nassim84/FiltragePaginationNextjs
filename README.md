@@ -83,25 +83,6 @@ _(Remplace cette URL par une vraie capture d’écran hébergée sur GitHub ou u
 
 ---
 
-## 🔧 API
-
-### Endpoints disponibles
-
-| Endpoint      | Méthode | Description                       |
-| ------------- | ------- | --------------------------------- |
-| `/api/data`   | GET     | Récupère la liste des données     |
-| `/api/filter` | POST    | Filtre les données selon critères |
-
-**Exemple de requête :**
-
-```javascript
-fetch("/api/data")
-	.then((res) => res.json())
-	.then((data) => console.log(data));
-```
-
----
-
 ## ⚙️ Build & Déploiement
 
 ### Build (production)

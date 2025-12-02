@@ -1,12 +1,8 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === "production";
-
-module.exports = {
-	output: "export",
-	basePath: isProd ? "/FiltragePaginationNextjs" : "",
-	assetPrefix: isProd ? "/FiltragePaginationNextjs/" : "",
-	// si tu utilises next/image — il faut désactiver l’optimisation
+const nextConfig = {
 	images: {
-		unoptimized: true,
+		unoptimized: true, // seulement si besoin pour ton code actuel
 	},
 };
+
+module.exports = nextConfig;
